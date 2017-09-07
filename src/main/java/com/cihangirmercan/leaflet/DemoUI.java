@@ -34,8 +34,8 @@ public class DemoUI extends UI {
         // info label about leaflet map click listener
         Label label = new Label("Click map to add marker at the clicked location");
            
-        // my own functions    
-        leaflet.setView(51.505, -0.090, 13); // centered to london with zoom level 13
+        // map is centered to london with zoom level 13
+        leaflet.setView(51.505, -0.090, 13); 
         
         // button listeners
         flyToSanFransisco.addClickListener(e -> {
