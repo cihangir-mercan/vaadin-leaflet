@@ -8,6 +8,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
+import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -24,6 +25,9 @@ public class DemoUI extends UI {
     	// horizontal alignment between buttons
     	final HorizontalLayout buttons = new HorizontalLayout();
         buttons.addComponents(flyToSanFransisco, flyToLondon);
+        
+        // info label about leaflet map click listener
+        Label label = new Label("Click map to add marker at the clicked location");
     	
         // our component
         Leaflet leaflet = new Leaflet();
@@ -49,7 +53,7 @@ public class DemoUI extends UI {
         
         // page layout 
         final VerticalLayout layout = new VerticalLayout();
-        layout.addComponents(buttons, leaflet);
+        layout.addComponents(buttons, leaflet, label);
         
         setContent(layout);   
     }
