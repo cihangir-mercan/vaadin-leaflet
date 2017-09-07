@@ -25,15 +25,15 @@ public class DemoUI extends UI {
     	// horizontal alignment between buttons
     	final HorizontalLayout buttons = new HorizontalLayout();
         buttons.addComponents(flyToSanFransisco, flyToLondon);
-        
-        // info label about leaflet map click listener
-        Label label = new Label("Click map to add marker at the clicked location");
-    	
+	    
         // our component
         Leaflet leaflet = new Leaflet();
         leaflet.setWidth("900px");
         leaflet.setHeight("500px");
-        
+	                
+        // info label about leaflet map click listener
+        Label label = new Label("Click map to add marker at the clicked location");
+           
         // my own functions    
         leaflet.setView(51.505, -0.090, 13); // centered to london with zoom level 13
         
