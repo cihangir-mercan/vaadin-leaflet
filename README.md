@@ -1,7 +1,7 @@
 vaadin-leaflet
 ==============
 
-Vaadin JavaScript(Leaflet) Component
+Vaadin JavaScript (Leaflet) Component
 
 Workflow
 ========
